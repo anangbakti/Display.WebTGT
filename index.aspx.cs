@@ -19,6 +19,8 @@ public partial class index : System.Web.UI.Page
 
             WorldMapKitWmsWebOverlay worldMapKitOverlay = new WorldMapKitWmsWebOverlay();
             Map1.CustomOverlays.Add(worldMapKitOverlay);
+
+            GridAllKapal.DataSource = String.Empty;
         }
     }
 }

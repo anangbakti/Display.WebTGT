@@ -43,7 +43,26 @@
                                 <label for="txtCallSign" class="lblInputFilter">CallSign</label>
                                 <input type="text" class="entryInputFilter" id="txtCallSign" />
                              </fieldset>
-                             <button id="cmdFilterAllKapal">Filter</button>
+                             <button id="cmdFilterAllKapal">Filter</button>                 
+                             <telerik:RadGrid ID="GridAllKapal" runat="server" AllowPaging="True" 
+                                AllowSorting="True" AutoGenerateColumns="false" GridLines="None"  Width="235px" >                                
+                                <MasterTableView>
+                                    <RowIndicatorColumn>
+                                        <HeaderStyle Width="20px" Height="30px" />
+                                    </RowIndicatorColumn>
+                                    <ExpandCollapseColumn>
+                                        <HeaderStyle Width="20px" Height="30px" />
+                                    </ExpandCollapseColumn>
+                                    <Columns>
+                                        <telerik:GridBoundColumn HeaderText="Nama Kapal" UniqueName="column">
+                                        </telerik:GridBoundColumn>
+                                        <telerik:GridBoundColumn HeaderText="MMSI" UniqueName="column1">
+                                        </telerik:GridBoundColumn>
+                                        <telerik:GridBoundColumn HeaderText="CallSign" UniqueName="column2">
+                                        </telerik:GridBoundColumn>
+                                    </Columns>
+                                </MasterTableView>
+                            </telerik:RadGrid>
                         </telerik:RadPageView>
                         <telerik:RadPageView ID="RadPageView2" runat="server">
                             
@@ -60,7 +79,7 @@
                     </telerik:RadTabStrip>
                     <telerik:RadMultiPage ID="RadMultiPage2" runat="server" SelectedIndex="0" Width="345px">
                         <telerik:RadPageView ID="RadPageView3" runat="server"> 
-                            <img src="Styles/LegendStatusKapal.jpg" alt="General - image only" class="imgHeaderRedBox" />                            
+                            <img src="Styles/LegendStatusKapal.jpg" alt="General - image only" class="imgHeaderRedBox" /> 
                         </telerik:RadPageView>
                     </telerik:RadMultiPage>
                 </div>
