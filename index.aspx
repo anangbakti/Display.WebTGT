@@ -17,7 +17,7 @@
     </div>
     <div id="contentBox">
         <telerik:RadSplitter ID="RadSplitter1" runat="server" SplitBarsSize=""  Width="100%" Height="100%" BorderSize="0"  >
-            <telerik:RadPane id="navigationPane" runat="server"  Width="258" MaxWidth="258" MinWidth="40" Scrolling="None">
+            <telerik:RadPane id="navigationPane" runat="server"  Width="260" MaxWidth="260" MinWidth="40" Scrolling="None">
                 <div id="displayModeBox">
                     <div id="displayMode">Mode :</div>
                     <div id="displayModeValue">Live</div>
@@ -35,6 +35,15 @@
                     <telerik:RadMultiPage ID="RadMultiPage1" runat="server" SelectedIndex="0" Width="345px">
                         <telerik:RadPageView ID="RadPageView1" runat="server">
                              <img src="Styles/FilterHeaderBox.jpg" alt="General - image only"  class="imgHeaderRedBox"/>
+                             <fieldset id="entryFilter">
+                                <label for="txtNama" class="lblInputFilter">Nama</label>
+                                <input type="text" class="entryInputFilter" id="txtNama" />
+                                <label for="txtMMSI" class="lblInputFilter">MMSI</label>
+                                <input type="text" class="entryInputFilter" id="txtMMSI" />
+                                <label for="txtCallSign" class="lblInputFilter">CallSign</label>
+                                <input type="text" class="entryInputFilter" id="txtCallSign" />
+                             </fieldset>
+                             <button id="cmdFilterAllKapal">Filter</button>
                         </telerik:RadPageView>
                         <telerik:RadPageView ID="RadPageView2" runat="server">
                             
