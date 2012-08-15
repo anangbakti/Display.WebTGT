@@ -17,13 +17,11 @@ body
 
 #headerBox
 {   
-    background-color:red;
     height:45px;
 }
 
 #contentBox
-{       
-    background-color:yellow;
+{   
     position: fixed; 
     top: 45px; /*Set top value to headerBox*/
     left: 0;
@@ -65,8 +63,8 @@ body
 
 #displayModeBox
 {
-    margin-top: 30px;
-    margin-left:30px;
+    margin-top: 10px;
+    margin-left:10px;
 }
 
 #copyright
@@ -74,4 +72,22 @@ body
     right: 50px;
     position: absolute;
     font-size: 11px;
+}
+
+#leftDaftarKapalBox
+{
+    background-color: #EAEAEA;
+    height: 100px;
+    width: 230px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#leftLegendBox
+{
+    background-color:#EAEAEA;
+    height:100px;
+    width:230px;
+    margin-top: 10px;
+    margin-left:10px;
 }
