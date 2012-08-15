@@ -16,15 +16,15 @@
         <div id="logo"></div>
     </div>
     <div id="contentBox">
-        <telerik:RadSplitter ID="RadSplitter1" runat="server" SplitBarsSize=""  Width="100%" Height="100%">
-            <telerik:RadPane id="navigationPane" runat="server" >
+        <telerik:RadSplitter ID="RadSplitter1" runat="server" SplitBarsSize=""  Width="100%" Height="100%"  >
+            <telerik:RadPane id="navigationPane" runat="server"  Width="250" MaxWidth="250" MinWidth="40" Scrolling="None">
                 <div id="displayModeBox">
                     <div id="displayMode">Mode :</div>
                     <div id="displayModeValue">Live</div>
                 </div>
             </telerik:RadPane>
-            <telerik:RadSplitBar id="RadSplitbar1" runat="server" CollapseMode="Forward" />
-            <telerik:RadPane id="contentPane" runat="server">
+            <telerik:RadSplitBar id="RadSplitbar1" runat="server" CollapseMode="Forward"  />
+            <telerik:RadPane id="contentPane" runat="server" Scrolling="None">
                 Right Pane
             </telerik:RadPane>
         </telerik:RadSplitter>
