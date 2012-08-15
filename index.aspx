@@ -17,7 +17,7 @@
     </div>
     <div id="contentBox">
         <telerik:RadSplitter ID="RadSplitter1" runat="server" SplitBarsSize=""  Width="100%" Height="100%" BorderSize="0"  >
-            <telerik:RadPane id="navigationPane" runat="server"  Width="250" MaxWidth="250" MinWidth="40" Scrolling="None">
+            <telerik:RadPane id="navigationPane" runat="server"  Width="258" MaxWidth="258" MinWidth="40" Scrolling="None">
                 <div id="displayModeBox">
                     <div id="displayMode">Mode :</div>
                     <div id="displayModeValue">Live</div>
@@ -34,7 +34,7 @@
                     </telerik:RadTabStrip>
                     <telerik:RadMultiPage ID="RadMultiPage1" runat="server" SelectedIndex="0" Width="345px">
                         <telerik:RadPageView ID="RadPageView1" runat="server">
-                             <img src="Styles/FilterHeaderBox.jpg" alt="General - image only" />
+                             <img src="Styles/FilterHeaderBox.jpg" alt="General - image only"  class="imgHeaderRedBox"/>
                         </telerik:RadPageView>
                         <telerik:RadPageView ID="RadPageView2" runat="server">
                             
@@ -51,7 +51,7 @@
                     </telerik:RadTabStrip>
                     <telerik:RadMultiPage ID="RadMultiPage2" runat="server" SelectedIndex="0" Width="345px">
                         <telerik:RadPageView ID="RadPageView3" runat="server"> 
-                            <img src="Styles/LegendStatusKapal.jpg" alt="General - image only" />                            
+                            <img src="Styles/LegendStatusKapal.jpg" alt="General - image only" class="imgHeaderRedBox" />                            
                         </telerik:RadPageView>
                     </telerik:RadMultiPage>
                 </div>
