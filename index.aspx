@@ -43,9 +43,10 @@
                                 <label for="txtCallSign" class="lblInputFilter">CallSign</label>
                                 <input type="text" class="entryInputFilter" id="txtCallSign" />
                              </fieldset>
-                             <button id="cmdFilterAllKapal">Filter</button>                 
-                             <telerik:RadGrid ID="GridAllKapal" runat="server" AllowPaging="True" 
-                                AllowSorting="True" AutoGenerateColumns="false" GridLines="None"  Width="235px" >                                
+                             <button id="cmdFilterAllKapal">Filter</button>
+                             <div id="divGridAllKapal" class="imgHeaderRedBox">
+                                <telerik:RadGrid ID="GridAllKapal" runat="server" AllowPaging="True" 
+                                AllowSorting="True" AutoGenerateColumns="false" GridLines="None"  Width="230px" >                                
                                 <MasterTableView>
                                     <RowIndicatorColumn>
                                         <HeaderStyle Width="20px" Height="30px" />
@@ -63,6 +64,7 @@
                                     </Columns>
                                 </MasterTableView>
                             </telerik:RadGrid>
+                             </div>
                         </telerik:RadPageView>
                         <telerik:RadPageView ID="RadPageView2" runat="server">
                             
@@ -91,8 +93,11 @@
             </telerik:RadPane>
         </telerik:RadSplitter>
     </div>
-    <div id="footerBox">
-        <div id="copyright">Infoglobal &#169;2012. All Right Reserved</div>
+    <div id="footerBox">        
+        <div id="refresh" class="footer-float-left">Refresh in 43"</div>
+        <a id="cmdRefreshNow" class="footer-float-left" href="#">Refresh Now</a>
+        <div id="labelJmlKapal" class="footer-float-left">Kapal Terlihat: 100</div>
+        <div id="copyright" class="footer-float-left">Infoglobal &#169;2012. All Right Reserved</div>
     </div>
     </form>
 </body>

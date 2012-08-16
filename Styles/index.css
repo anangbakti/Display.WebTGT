@@ -31,9 +31,14 @@ body
 }
 
 #footerBox
-{  
-    width: 100%; position: fixed; clear: both; position:absolute; bottom:0; left:0;
-    height:20px;
+{
+    width: 100%;
+    position: fixed;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px;
 }
 
 
@@ -57,8 +62,8 @@ body
 #displayModeValue
 {
     font-size: 12px;
-    color: #CC0000;
-    margin-left:5px;
+    color: #008000;
+    margin-left: 5px;
 }
 
 #displayModeBox
@@ -67,17 +72,41 @@ body
     margin-left:10px;
 }
 
+#refresh
+{
+     margin-left:268px;    
+}
+
+#cmdRefreshNow
+{
+    margin-left:5px;    
+}
+
+#labelJmlKapal
+{
+     margin-left:50px;    
+}
+
 #copyright
 {
-    right: 50px;
-    position: absolute;
-    font-size: 11px;
+    margin-left: 200px;
+}
+
+#cmdRefreshNow
+{
+    color: #800000;
+}
+
+.footer-float-left
+{
+    float: left;
+    font-size: 11px;  
 }
 
 #leftDaftarKapalBox
 {
     background-color: #EAEAEA;
-    height: 400px;
+    height: 350px;
     width: 245px;
     margin-top: 10px;
     margin-left: 10px;
