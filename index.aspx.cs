@@ -13,12 +13,12 @@ public partial class index : System.Web.UI.Page
     {
         if (!Page.IsPostBack)
         {
-            Map1.MapBackground.BackgroundBrush = new GeoSolidBrush(GeoColor.FromHtml("#E5E3DF"));
-            Map1.CurrentExtent = new RectangleShape(-125, 72, 50, -46);
-            Map1.MapUnit = GeographyUnit.DecimalDegree;
+            map1.MapBackground.BackgroundBrush = new GeoSolidBrush(GeoColor.FromHtml("#E5E3DF"));
+            map1.CurrentExtent = new RectangleShape(-125, 72, 50, -46);
+            map1.MapUnit = GeographyUnit.DecimalDegree;
 
             WorldMapKitWmsWebOverlay worldMapKitOverlay = new WorldMapKitWmsWebOverlay();
-            Map1.CustomOverlays.Add(worldMapKitOverlay);
+            map1.CustomOverlays.Add(worldMapKitOverlay);
 
             GridAllKapal.DataSource = String.Empty;
         }

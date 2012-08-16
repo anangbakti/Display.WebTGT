@@ -13,7 +13,8 @@
     <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
     </telerik:RadScriptManager>
     <div id="headerBox">
-        <div id="logo"></div>
+        <div id="logo" class="float-left"></div>
+        <div id="menuBox" class="float-left"></div>
     </div>
     <div id="contentBox">
         <telerik:RadSplitter ID="RadSplitter1" runat="server" SplitBarsSize=""  Width="100%" Height="100%" BorderSize="0"  >
@@ -26,9 +27,7 @@
                     <telerik:RadTabStrip ID="RadTabStrip1" runat="server" Skin="Vista" SelectedIndex="0" 
                         MultiPageID="RadMultiPage1">
                         <Tabs>
-                            <telerik:RadTab runat="server" Text="SEMUA KAPAL">
-                            </telerik:RadTab>
-                            <telerik:RadTab runat="server" Text="CARI">
+                            <telerik:RadTab runat="server" Text="DAFTAR KAPAL">
                             </telerik:RadTab>
                         </Tabs>
                     </telerik:RadTabStrip>
@@ -65,10 +64,7 @@
                                 </MasterTableView>
                             </telerik:RadGrid>
                              </div>
-                        </telerik:RadPageView>
-                        <telerik:RadPageView ID="RadPageView2" runat="server">
-                            
-                        </telerik:RadPageView>
+                        </telerik:RadPageView>                       
                     </telerik:RadMultiPage>
                 </div>
                 <div id="leftLegendBox">
@@ -87,17 +83,19 @@
                 </div>
             </telerik:RadPane>
             <telerik:RadSplitBar id="RadSplitbar1" runat="server" CollapseMode="Forward"  />
-            <telerik:RadPane id="contentPane" runat="server" Scrolling="None">
-                 <cc1:Map ID="Map1" runat="server" height="100%" width="100%" BorderWidth="1" BorderColor="#C0C0C0">
-                 </cc1:Map>
+            <telerik:RadPane id="contentPane" runat="server" Scrolling="None">                
+                <div id="mapBox">
+                    <cc1:Map ID="map1" runat="server" height="100%" width="100%" BorderWidth="1" BorderColor="#C0C0C0">
+                    </cc1:Map>                 
+                </div>        
+                <div id="copyright" >Infoglobal &#169;2012. All Rights Reserved</div>        
             </telerik:RadPane>
         </telerik:RadSplitter>
     </div>
     <div id="footerBox">        
-        <div id="refresh" class="footer-float-left">Refresh in 43"</div>
-        <a id="cmdRefreshNow" class="footer-float-left" href="#">Refresh Now</a>
-        <div id="labelJmlKapal" class="footer-float-left">Kapal Terlihat: 100</div>
-        <div id="copyright" class="footer-float-left">Infoglobal &#169;2012. All Right Reserved</div>
+        <div id="refresh" class="float-left">Refresh in 43"</div>
+        <a id="cmdRefreshNow" class="float-left" href="#">Refresh Now</a>
+        <div id="labelJmlKapal" class="float-left">Kapal Terlihat: 100</div>
     </div>
     </form>
 </body>
