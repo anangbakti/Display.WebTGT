@@ -16,6 +16,7 @@
         <div id="logo" class="float-left"></div>
         <div id="menuBox" class="float-left"></div>
     </div>
+    <div id="nailHeader">V</div>
     <div id="contentBox">        
         <telerik:RadSplitter ID="RadSplitter1" runat="server" SplitBarsSize=""  Width="100%" Height="100%" BorderSize="0"  >
             <telerik:RadPane id="navigationPane" runat="server"  Width="260" MaxWidth="260" MinWidth="40" Scrolling="None">
@@ -94,6 +95,7 @@
             </telerik:RadPane>
         </telerik:RadSplitter>
     </div>
+    <div id="nailFooter">V</div>
     <div id="footerBox">        
         <div id="refresh" class="float-left">Refresh in 43"</div>
         <a id="cmdRefreshNow" class="float-left" href="#">Refresh Now</a>

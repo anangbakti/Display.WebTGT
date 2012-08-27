@@ -20,6 +20,20 @@ body
     height:45px;
 }
 
+#nailHeader
+{
+    background-color: #FFFFFF;
+    width: 10px;
+    height: 12px;
+    margin-right: 50%; margin-left: 50%;
+    top: 45px;
+    position: fixed;
+    clear: both;
+    text-align:center;
+    z-index:2;
+    cursor:pointer;
+}
+
 #contentBox
 {   
     position: fixed; 
@@ -31,6 +45,20 @@ body
   
 }
 
+#nailFooter
+{
+    background-color: #FFFFFF;
+    width: 10px;
+    height: 12px;
+    margin-right: 50%; margin-left: 50%;
+    bottom: 20px;
+    position: fixed;
+    clear: both;
+    text-align:center;
+    z-index:2;
+    cursor:pointer;
+}
+
 #footerBox
 {
     width: 100%;
@@ -39,7 +67,7 @@ body
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 20px;
+    height: 20px;    
 }
 
 
