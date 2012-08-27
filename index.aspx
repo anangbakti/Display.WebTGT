@@ -102,5 +102,7 @@
         <div id="labelJmlKapal" class="float-left">Kapal Terlihat: 100</div>
     </div>
     </form>
+    <script type="text/javascript" src="Scripts/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="Scripts/index.js"></script>
 </body>
 </html>
