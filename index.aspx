@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
-
 <%@ Register assembly="WebEdition" namespace="ThinkGeo.MapSuite.WebEdition" tagprefix="cc1" %>
 
 <!DOCTYPE html>
@@ -12,11 +11,12 @@
 <body><form id="form1" runat="server">
     <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
     </telerik:RadScriptManager>
+    
     <div id="headerBox">
         <div id="logo" class="float-left"></div>
         <div id="menuBox" class="float-left"></div>
     </div>
-    <div id="contentBox">
+    <div id="contentBox">        
         <telerik:RadSplitter ID="RadSplitter1" runat="server" SplitBarsSize=""  Width="100%" Height="100%" BorderSize="0"  >
             <telerik:RadPane id="navigationPane" runat="server"  Width="260" MaxWidth="260" MinWidth="40" Scrolling="None">
                 <div id="displayModeBox">
@@ -24,10 +24,10 @@
                     <div id="displayModeValue">Live</div>
                 </div>
                 <div id="leftDaftarKapalBox">
-                    <telerik:RadTabStrip ID="RadTabStrip1" runat="server" Skin="Vista" SelectedIndex="0" 
-                        MultiPageID="RadMultiPage1">
+                    <telerik:RadTabStrip ID="RadTabStrip1" runat="server" SelectedIndex="0" 
+                        MultiPageID="RadMultiPage1" Skin="Vista"  >
                         <Tabs>
-                            <telerik:RadTab runat="server" Text="DAFTAR KAPAL">
+                            <telerik:RadTab runat="server" Text="DAFTAR KAPAL" Font-Size="10px">
                             </telerik:RadTab>
                         </Tabs>
                     </telerik:RadTabStrip>
@@ -35,26 +35,28 @@
                         <telerik:RadPageView ID="RadPageView1" runat="server">
                              <img src="Styles/FilterHeaderBox.jpg" alt="General - image only"  class="imgHeaderRedBox"/>
                              <fieldset id="entryFilter">
-                                <label for="txtNama" class="lblInputFilter">Nama</label>
                                 <input type="text" class="entryInputFilter" id="txtNama" />
-                                <label for="txtMMSI" class="lblInputFilter">MMSI</label>
+                                <label for="txtNama" class="lblInputFilter">Nama</label>
                                 <input type="text" class="entryInputFilter" id="txtMMSI" />
-                                <label for="txtCallSign" class="lblInputFilter">CallSign</label>
+                                <label for="txtMMSI" class="lblInputFilter">MMSI</label>
                                 <input type="text" class="entryInputFilter" id="txtCallSign" />
+                                <label for="txtCallSign" class="lblInputFilter">CallSign</label>
+                                
                              </fieldset>
                              <button id="cmdFilterAllKapal">Filter</button>
                              <div id="divGridAllKapal" class="imgHeaderRedBox">
                                 <telerik:RadGrid ID="GridAllKapal" runat="server" AllowPaging="True" 
-                                AllowSorting="True" AutoGenerateColumns="false" GridLines="None"  Width="230px" >                                
+                                AllowSorting="True" AutoGenerateColumns="false" GridLines="None"  Width="230px" 
+                                     HeaderStyle-Font-Size="10px"  >                                
                                 <MasterTableView>
                                     <RowIndicatorColumn>
-                                        <HeaderStyle Width="20px" Height="30px" />
+                                        <HeaderStyle Width="20px" Height="30px"/>
                                     </RowIndicatorColumn>
                                     <ExpandCollapseColumn>
                                         <HeaderStyle Width="20px" Height="30px" />
                                     </ExpandCollapseColumn>
                                     <Columns>
-                                        <telerik:GridBoundColumn HeaderText="Nama Kapal" UniqueName="column">
+                                        <telerik:GridBoundColumn HeaderText="Nama Kapal" UniqueName="column"> 
                                         </telerik:GridBoundColumn>
                                         <telerik:GridBoundColumn HeaderText="MMSI" UniqueName="column1">
                                         </telerik:GridBoundColumn>
@@ -71,7 +73,7 @@
                     <telerik:RadTabStrip ID="RadTabStrip2" runat="server" Skin="Vista" SelectedIndex="0" 
                         MultiPageID="RadMultiPage2">
                         <Tabs>
-                            <telerik:RadTab runat="server" Text="LEGEND">
+                            <telerik:RadTab runat="server" Text="LEGEND" Font-Size="10px">
                             </telerik:RadTab>
                         </Tabs>
                     </telerik:RadTabStrip>
