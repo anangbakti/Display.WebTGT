@@ -24,6 +24,7 @@
                     <div id="displayMode">Mode :</div>
                     <div id="displayModeValue">Live</div>
                 </div>
+                <div id="arrowDaftarKapal"></div>
                 <div id="leftDaftarKapalBox">
                     <telerik:RadTabStrip ID="RadTabStrip1" runat="server" SelectedIndex="0" 
                         MultiPageID="RadMultiPage1" Skin="Vista"  >
@@ -34,14 +35,18 @@
                     </telerik:RadTabStrip>
                     <telerik:RadMultiPage ID="RadMultiPage1" runat="server" SelectedIndex="0" Width="345px">
                         <telerik:RadPageView ID="RadPageView1" runat="server">
-                             <img src="Styles/FilterHeaderBox.jpg" alt="General - image only"  class="imgHeaderRedBox"/>
+                             <img src="Styles/FilterHeaderBox2.jpg" alt="General - image only"  class="imgHeaderRedBox"/>
                              <fieldset id="entryFilter">
                                 <input type="text" class="entryInputFilter" id="txtNama" />
                                 <label for="txtNama" class="lblInputFilter">Nama</label>
                                 <input type="text" class="entryInputFilter" id="txtMMSI" />
                                 <label for="txtMMSI" class="lblInputFilter">MMSI</label>
                                 <input type="text" class="entryInputFilter" id="txtCallSign" />
-                                <label for="txtCallSign" class="lblInputFilter">CallSign</label>                                
+                                <label for="txtCallSign" class="lblInputFilter">CallSign</label>
+                                <input type="text" class="entryInputFilter" id="txtBendera" />
+                                <label for="txtBendera" class="lblInputFilter">Bendera</label>
+                                <input type="text" class="entryInputFilter" id="txtAgen" />
+                                <label for="txtAgen" class="lblInputFilter">Agen</label>                                
                              </fieldset>
                              <button id="cmdResetKapal">Reset Filter</button>
                              <button id="cmdFilterAllKapal">Filter</button>
@@ -99,7 +104,7 @@
     <div id="footerBox">        
         <div id="refresh" class="float-left">Refresh in 43"</div>
         <a id="cmdRefreshNow" class="float-left" href="#">Refresh Now</a>
-        <div id="labelJmlKapal" class="float-left">Kapal Terlihat: 100</div>
+        <div id="labelJmlKapal" class="float-left">Kapal Terlihat: 30/100</div>
     </div>
     </form>
     <script type="text/javascript" src="Scripts/jquery-1.8.0.min.js"></script>

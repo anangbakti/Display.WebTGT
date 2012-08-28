@@ -23,8 +23,7 @@ $(document).ready(function () {
             headerOpened = false;
         }
         else {
-            SetHeaderFooterContentNormal();
-            headerOpened = true;
+            SetHeaderFooterContentNormal();            
         }
     });
 
@@ -34,8 +33,7 @@ $(document).ready(function () {
             footerOpened = false;
         }
         else {
-            SetHeaderFooterContentNormal();
-            footerOpened = true;
+            SetHeaderFooterContentNormal();           
         }
     });
 
@@ -43,6 +41,8 @@ $(document).ready(function () {
         $("#txtNama").val("");
         $("#txtMMSI").val("");
         $("#txtCallSign").val("");
+        $("#txtBendera").val("");
+        $("#txtAgen").val("");
         $("#txtNama").focus();
         e.preventDefault();
     });
@@ -54,5 +54,6 @@ function SetHeaderFooterContentNormal() {
     $("#nailFooter").css(cssNailFooterNormal);
     $("#logo").css(cssLogoNormal);
     $("#menuBox").css(cssMenuBoxNormal);
+    headerOpened = true; footerOpened = true;
 }
 

@@ -154,6 +154,18 @@ body
     font-size: 10px;  
 }
 
+#arrowDaftarKapal
+{
+    width: 9px;
+    height: 7px;
+    position: absolute;
+    top: 73px;
+    left: 225px;
+    z-index: 2;
+    background-image: url('expandowhitearrow.png');
+    background-repeat: no-repeat;
+}
+
 #leftDaftarKapalBox
 {
     background-color: #EAEAEA;
@@ -161,6 +173,7 @@ body
     width: 245px;
     margin-top: 10px;
     margin-left: 10px;
+    cursor:pointer;
 }
 
 #leftLegendBox
