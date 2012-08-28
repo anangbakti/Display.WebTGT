@@ -41,9 +41,9 @@
                                 <input type="text" class="entryInputFilter" id="txtMMSI" />
                                 <label for="txtMMSI" class="lblInputFilter">MMSI</label>
                                 <input type="text" class="entryInputFilter" id="txtCallSign" />
-                                <label for="txtCallSign" class="lblInputFilter">CallSign</label>
-                                
+                                <label for="txtCallSign" class="lblInputFilter">CallSign</label>                                
                              </fieldset>
+                             <button id="cmdResetKapal">Reset Filter</button>
                              <button id="cmdFilterAllKapal">Filter</button>
                              <div id="divGridAllKapal" class="imgHeaderRedBox">
                                 <telerik:RadGrid ID="GridAllKapal" runat="server" AllowPaging="True" 
