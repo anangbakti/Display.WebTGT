@@ -1,21 +1,12 @@
 ﻿/// <reference path="jquery-1.8.0.min.js"/>
-var footerOpened;
+/// <reference path="css-tools.js"/>
+var footerOpened, cssContentBoxNormal;
 
-var cssContentBoxNormal = {
-    'position': 'fixed',
-    'top': '45px',
-    'left': '0',
-    'right': '0',
-    'bottom': '20px',
-    'overflow' : 'hidden'
-}
-
-var cssContentBoxTopHidden= {
-    'top': '0px'
-}
+var cssContentBoxTopHidden= {'top': '0px'}
 
 $(document).ready(function () {
     footerOpened = true;
+    cssContentBoxNormal = css($("#contentBox"));
 
     $("#nailHeader").click(function () {
         if (footerOpened) {
@@ -24,7 +15,7 @@ $(document).ready(function () {
         }
         else {
             $("#contentBox").css(cssContentBoxNormal);
-            footerOpened = true;            
+            footerOpened = true;
         }
     });
 });
