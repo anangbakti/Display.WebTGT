@@ -36,20 +36,22 @@
                     <telerik:RadMultiPage ID="RadMultiPage1" runat="server" SelectedIndex="0" Width="345px">
                         <telerik:RadPageView ID="RadPageView1" runat="server">
                              <img src="Styles/FilterHeaderBox2.jpg" alt="General - image only"  class="imgHeaderRedBox"/>
-                             <fieldset id="entryFilter">
-                                <input type="text" class="entryInputFilter" id="txtNama" />
-                                <label for="txtNama" class="lblInputFilter">Nama</label>
-                                <input type="text" class="entryInputFilter" id="txtMMSI" />
-                                <label for="txtMMSI" class="lblInputFilter">MMSI</label>
-                                <input type="text" class="entryInputFilter" id="txtCallSign" />
-                                <label for="txtCallSign" class="lblInputFilter">CallSign</label>
-                                <input type="text" class="entryInputFilter" id="txtBendera" />
-                                <label for="txtBendera" class="lblInputFilter">Bendera</label>
-                                <input type="text" class="entryInputFilter" id="txtAgen" />
-                                <label for="txtAgen" class="lblInputFilter">Agen</label>                                
-                             </fieldset>
-                             <button id="cmdResetKapal">Reset Filter</button>
-                             <button id="cmdFilterAllKapal">Filter</button>
+                             <div id="entryFilterBox">
+                                 <fieldset id="entryFilter">
+                                    <input type="text" class="entryInputFilter" id="txtNama" />
+                                    <label for="txtNama" class="lblInputFilter">Nama</label>
+                                    <input type="text" class="entryInputFilter" id="txtMMSI" />
+                                    <label for="txtMMSI" class="lblInputFilter">MMSI</label>
+                                    <input type="text" class="entryInputFilter" id="txtCallSign" />
+                                    <label for="txtCallSign" class="lblInputFilter">CallSign</label>
+                                    <input type="text" class="entryInputFilter" id="txtBendera" />
+                                    <label for="txtBendera" class="lblInputFilter">Bendera</label>
+                                    <input type="text" class="entryInputFilter" id="txtAgen" />
+                                    <label for="txtAgen" class="lblInputFilter">Agen</label>                                
+                                 </fieldset>
+                                 <button id="cmdResetKapal">Reset Filter</button>
+                                 <button id="cmdFilterAllKapal">Filter</button>
+                             </div>
                              <div id="divGridAllKapal" class="imgHeaderRedBox">
                                 <telerik:RadGrid ID="GridAllKapal" runat="server" AllowPaging="True" 
                                 AllowSorting="True" AutoGenerateColumns="false" GridLines="None"  Width="230px" 

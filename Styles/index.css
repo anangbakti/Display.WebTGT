@@ -162,8 +162,11 @@ body
     top: 73px;
     left: 225px;
     z-index: 2;
+    cursor:pointer;
     background-image: url('expandowhitearrow.png');
     background-repeat: no-repeat;
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
 }
 
 #leftDaftarKapalBox
@@ -172,8 +175,7 @@ body
     height: 350px;
     width: 245px;
     margin-top: 10px;
-    margin-left: 10px;
-    cursor:pointer;
+    margin-left: 10px;    
 }
 
 #leftLegendBox
