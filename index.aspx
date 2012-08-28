@@ -35,7 +35,7 @@
                     </telerik:RadTabStrip>
                     <telerik:RadMultiPage ID="RadMultiPage1" runat="server" SelectedIndex="0" Width="345px">
                         <telerik:RadPageView ID="RadPageView1" runat="server">
-                             <img src="Styles/FilterHeaderBox2.jpg" alt="General - image only"  class="imgHeaderRedBox"/>
+                             <img src="Styles/FilterHeaderBox.jpg" alt="General - image only"  class="imgHeaderRedBox"/>
                              <div id="entryFilterBox">
                                  <fieldset id="entryFilter">
                                     <input type="text" class="entryInputFilter" id="txtNama" />
